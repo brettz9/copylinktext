@@ -23,9 +23,8 @@ function getMultiple (sel) {
     return [selectedContent, selectedValues];
 }
 
-function mouseDown (e, ev) {
-    ev = ev || e;
-    var i, opt, optProps, labelText, el = e.nodeName ? e : e.target, // Element or event
+function mouseDown (el) {
+    var i, opt, optProps, labelText,
         textContent, value,
         nodeName = el.nodeName.toLowerCase(),
         labels = document.getElementsByTagName('label');
@@ -77,10 +76,6 @@ function mouseDown (e, ev) {
     }
 
     self.postMessage([value, textContent, labelText]);
-    // We could also give option to "e.stopPropagation();" in case there are other events
-    //     attached here, but we're interfering enough as it is, so it's probably not necessary
-    //     as long as we don't disturb more than necessary by stopping propagation
-    ev.preventDefault();
 }
 
 /*
@@ -99,37 +94,40 @@ self.port.on('setAccessPass', function (bool) {
 */
 
 // PAGE EVENTS
-self.on('context', function (e, data) {
-    // show or hide the menuitem based on what the context menu is on
-    // see http://kb.mozillazine.org/Adding_items_to_menus
-    var focusedElement = document.activeElement,
-        nodeName = focusedElement && focusedElement.nodeName.toLowerCase();
+self.on('context', function (el, data) {
+    // Remove the following code in favor of CSS-based selector
+
+    // Find a way to give option to preventDefault and "e.stopPropagation();" in case there are other events
+    //     attached here, but we're interfering enough as it is, so it's probably not necessary
+    //     as long as we don't disturb more than necessary by stopping propagation
+
+    var nodeName = el && el.nodeName.toLowerCase();
 
     data = JSON.parse(data);
     strings = data.localeObject;
     accessFormControls = data.accessFormControls;
     accessPass = data.accessPass;
-    
+
     if (!accessFormControls) {
         return;
     }
 
     switch(nodeName) {
         // Todo: input type hidden, optgroup?, get form and form control names?
-        case 'input': // Useful for type=password, 
+        case 'input': // Useful for type=password,
                                  // (checkbox, radio),
                                  // (button, submit, reset),
                                  // file, image (doesn't work with initial setting of value)
                                  // (not getting hidden)
-            if (focusedElement.type === 'text' || // DO NOT ENABLE FOR REGULAR TEXT-BOXES!
-                (focusedElement.type === 'password' && // WE ALLOW FOR PASSWORD FIELDS (UNLESS DISABLED OR TEXT SELECTED)
-                focusedElement.selectionStart !== focusedElement.selectionEnd)) {
+            if (el.type === 'text' || // DO NOT ENABLE FOR REGULAR TEXT-BOXES!
+                (el.type === 'password' && // WE ALLOW FOR PASSWORD FIELDS (UNLESS DISABLED OR TEXT SELECTED)
+                el.selectionStart !== el.selectionEnd)) {
                 return;
             }
             // Fall-through
         case 'select': case 'button': case 'img': // Already accessible on "View image info"->Associated text, but we'll add it automatically to the clipboard
             // Actually, 'img' doesn't seem to trigger here, but it is now more fully handled with regular "copy link text"
-            mouseDown(focusedElement, e);
+            mouseDown(el);
             break;
     }
 });
