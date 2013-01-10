@@ -9,12 +9,7 @@ var strings,
             return strings[str];
     };
 
-/*self.port.on('setLocaleObject', function (strObj) {
-    strings = strObj;
-});*/
-
 self.on('click', function (el, data) {
-    // Get the link text
     var imgs, imgsl, i, showAltText, alts = [],
         copytext = el.textContent.replace(/^\s*(.*?)\s*$/, '$1'); // Ensure we get it all (except WS)
     data = JSON.parse(data);

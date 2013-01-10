@@ -2,16 +2,6 @@
 (function () {
 'use strict';
 
-var accessFormControls,
-    accessPass,
-    strings,
-    _ = // require('l10n').get
-        function (str) {
-            var strings = {
-            };
-            return strings[str];
-    };
-
 function getMultiple (sel) {
     var i, selectedContent = [], selectedValues = [];
     for (i = 0; i < sel.options.length; i++) {
@@ -78,58 +68,26 @@ function mouseDown (el) {
     self.postMessage([value, textContent, labelText]);
 }
 
-/*
-// LOCALE
-self.port.on('setLocaleObject', function (strObj) {
-    strings = strObj;
-});
-
-// PREFS
-self.port.on('setAccessFormControls', function (bool) {
-    accessFormControls = bool;
-});
-self.port.on('setAccessPass', function (bool) {
-    accessPass = bool;
-});
-*/
-
 // PAGE EVENTS
-self.on('context', function (el, data) {
-    // Remove the following code in favor of CSS-based selector
+self.on('context', function (el) {
+    /* Not needed?
+    var nodeName = el && el.nodeName.toLowerCase();
+    if (nodeName === 'input' && // WE DISALLOW PASSWORD FIELDS IF DISABLED OR TEXT SELECTED
+        el.type === 'password' &&
+        el.selectionStart !== el.selectionEnd) {
+        return;
+    }
+    */
 
     // Find a way to give option to preventDefault and "e.stopPropagation();" in case there are other events
     //     attached here, but we're interfering enough as it is, so it's probably not necessary
     //     as long as we don't disturb more than necessary by stopping propagation
+    // Make conditional if user wishes for automatic execution
+    mouseDown(el);
+});
 
-    var nodeName = el && el.nodeName.toLowerCase();
-
-    data = JSON.parse(data);
-    strings = data.localeObject;
-    accessFormControls = data.accessFormControls;
-    accessPass = data.accessPass;
-
-    if (!accessFormControls) {
-        return;
-    }
-
-    switch(nodeName) {
-        // Todo: input type hidden, optgroup?, get form and form control names?
-        case 'input': // Useful for type=password,
-                                 // (checkbox, radio),
-                                 // (button, submit, reset),
-                                 // file, image (doesn't work with initial setting of value)
-                                 // (not getting hidden)
-            if (el.type === 'text' || // DO NOT ENABLE FOR REGULAR TEXT-BOXES!
-                (el.type === 'password' && // WE ALLOW FOR PASSWORD FIELDS (UNLESS DISABLED OR TEXT SELECTED)
-                el.selectionStart !== el.selectionEnd)) {
-                return;
-            }
-            // Fall-through
-        case 'select': case 'button': case 'img': // Already accessible on "View image info"->Associated text, but we'll add it automatically to the clipboard
-            // Actually, 'img' doesn't seem to trigger here, but it is now more fully handled with regular "copy link text"
-            mouseDown(el);
-            break;
-    }
+self.on('click', function (el, data) {
+    mouseDown(el);
 });
 
 }());
