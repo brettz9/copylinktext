@@ -20,6 +20,13 @@
             "description": "Copy alt attribute content in addition to displayed link text",
             "value": false,
             "title": "Show alt attribute text"
+        },
+        {
+            "name": "immediateFormClickExecution",
+            "type": "bool",
+            "description": "When right-clicking buttons, select menus, non-text input boxes, or images, grab textual information pertaining to the form element",
+            "value": false,
+            "title": "Immediate execution of a form dlick"
         }
     ],
     "name": "copylinktext",

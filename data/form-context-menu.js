@@ -79,9 +79,6 @@ self.on('context', function (el) {
     }
     */
 
-    // Find a way to give option to preventDefault and "e.stopPropagation();" in case there are other events
-    //     attached here, but we're interfering enough as it is, so it's probably not necessary
-    //     as long as we don't disturb more than necessary by stopping propagation
     // Make conditional if user wishes for automatic execution
     mouseDown(el);
 });
