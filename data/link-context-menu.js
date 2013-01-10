@@ -13,18 +13,16 @@ var strings,
     strings = strObj;
 });*/
 
-self.on('click', function (e, data) {
+self.on('click', function (el, data) {
     // Get the link text
     var imgs, imgsl, i, showAltText, alts = [],
-        copytext = e.target.textContent || '',
-        focusedElement = document.activeElement;
+        copytext = el.textContent.replace(/^\s*(.*?)\s*$/, '$1'); // Ensure we get it all (except WS)
     data = JSON.parse(data);
     strings = data.localeObject;
     showAltText = data.showAltText;
 
-    copytext = focusedElement.textContent.replace(/^\s*(.*?)\s*$/, '$1'); // Ensure we get it all (except WS)
     if (showAltText) {
-        imgs = focusedElement.getElementsByTagName('img');
+        imgs = el.getElementsByTagName('img');
         for (i = 0, imgsl = imgs.length; i < imgsl; i++) {
             if (imgs[i].hasAttribute('alt')) {
                 alts.push(imgs[i].alt || _("emptyString"));
