@@ -10,5 +10,5 @@ Possible user-facing todos:
 2. Optional ability to get input type hidden, optgroup text?, get form and form control names?
 3. Move non-links/img alt text retrieval to separate add-on?
 4. Make option to grab label text for elements
-5. Revisit image copying
+5. Revisit image copying and password copying (to avoid showing what is being copied)
 6. Resubmit to Babelzilla to ensure new items are also localized
