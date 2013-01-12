@@ -2,6 +2,12 @@
 (function () {
 'use strict';
 
+var strings,
+    _ = // require('l10n').get
+        function (str) {
+            return strings[str];
+    };
+
 function getMultiple (sel) {
     var i, selectedContent = [], selectedValues = [];
     for (i = 0; i < sel.options.length; i++) {
@@ -13,7 +19,7 @@ function getMultiple (sel) {
     return [selectedContent, selectedValues];
 }
 
-function mouseDown (el) {
+function mouseDown (el, data) {
     var i, opt, optProps, labelText,
         textContent, value,
         nodeName = el.nodeName.toLowerCase(),
@@ -43,15 +49,12 @@ function mouseDown (el) {
             textContent = el.textContent || labelText || '';
             value = el.value;
             break;
-        case 'input': // Useful for type=password,
+        case 'input': // Useful for type=password, (if enabled)
                                  // (checkbox, radio),
                                  // (button, submit, reset),
                                  // file, image
                                  // (not getting hidden)
             if (el.type !== 'image') {
-                if (el.type === 'password' && !accessPass) {
-                    return;
-                }
                 textContent = el.textContent || labelText || ''; // textContent doesn't seem to work for these types
                 value = el.value; // Could shorten menu below to avoid this, since is always the same
                 // value = el.name;
@@ -69,7 +72,7 @@ function mouseDown (el) {
 }
 
 // PAGE EVENTS
-self.on('context', function (el) {
+self.on('context', function (el, data) {
     /* Not needed?
     var nodeName = el && el.nodeName.toLowerCase();
     if (nodeName === 'input' && // WE DISALLOW PASSWORD FIELDS IF DISABLED OR TEXT SELECTED
@@ -78,13 +81,19 @@ self.on('context', function (el) {
         return;
     }
     */
+    data = JSON.parse(data);
+    strings = data.localeObject;
 
     // Make conditional if user wishes for automatic execution
-    mouseDown(el);
+    if (data.immediateFormClickExecution) {
+        mouseDown(el);
+    }
 });
 
 self.on('click', function (el, data) {
-    mouseDown(el);
+    if (!data.immediateFormClickExecution) {
+        mouseDown(el);
+    }
 });
 
 }());

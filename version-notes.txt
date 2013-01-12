@@ -1,8 +1,10 @@
-Changes to 1.6
+Changes to 1.6.1
 // Restartless version (no context menu accesskey available in SDK, nor is there a dependency between options so disabling one can affect the other option)
 // Add support for getting alt text alone
 // Make default off for including alt text within link text
 // Change text on context menu for grabbing non-link form control text
+// Avoid displaying password context menu if not enabled
+// Give option whether to immediately execute on context event or require explicit click
 
 Changes to 1.5.3
 // Revert as wasn't working (and FF16 didn't complain); reinstate Thunderbird support
