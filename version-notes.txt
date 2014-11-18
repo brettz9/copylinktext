@@ -1,3 +1,6 @@
+Changes to 1.7.0
+* Support customizable accesskey (to arrive in FF 35)
+
 Changes to 1.6.1, 1.6.2, 1.6.3
 * Restartless version
 * Added accesskey (to arrive in FF 35)
