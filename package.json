@@ -32,7 +32,7 @@
     "name": "copylinktext",
     "license": "MPL 2.0/MIT/New BSD",
     "author": "Brett Zamir",
-    "version": "1.6.2",
+    "version": "1.6.3",
     "main": "lib/main",
     "title": "Copy Link Text",
     "id": "copylinktext@brett.zamir",

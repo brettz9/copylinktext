@@ -1,6 +1,6 @@
-Changes to 1.6.1, 1.6.2
+Changes to 1.6.1, 1.6.2, 1.6.3
 * Restartless version
-* Added accesskey
+* Added accesskey (to arrive in FF 35)
 * Make default off for including alt text within link text
 * Change text displayed on context menu when grabbing non-link form control text
 * Avoid displaying password context menu if not enabled
