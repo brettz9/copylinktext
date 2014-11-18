@@ -28,9 +28,11 @@ function mouseDown (el) {
             break;
         }
     }
-
     switch(nodeName) {
         // Todo: input type hidden, optgroup?, get form and form control names?
+        case 'option':
+            el = el.parentNode;
+            /*Fall-through*/
         case 'select':
             if (el.multiple) {
                 optProps = getMultiple(el);
