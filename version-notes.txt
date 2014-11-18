@@ -1,7 +1,6 @@
 Changes to 1.6.1, 1.6.2
 * Restartless version
-* Added accesskey to SDK (though currently no dependency between options so disabling one can affect the other option)
-* Add support for getting alt text alone
+* Added accesskey
 * Make default off for including alt text within link text
 * Change text displayed on context menu when grabbing non-link form control text
 * Avoid displaying password context menu if not enabled
