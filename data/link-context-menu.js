@@ -7,7 +7,7 @@ var strings,
     _ = // require('l10n').get
         function (str) {
             return strings[str];
-    };
+        };
 
 self.on('click', function (el, data) {
     var imgs, imgsl, i, showAltText, alts = [],
