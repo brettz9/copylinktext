@@ -1,4 +1,4 @@
-Changes to 1.6.1
+Changes to 1.6.1, 1.6.2
 * Restartless version
 * Added accesskey to SDK (though currently no dependency between options so disabling one can affect the other option)
 * Add support for getting alt text alone
