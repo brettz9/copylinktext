@@ -1,3 +1,7 @@
+Changes to 1.7.1
+* Fix bug for form controls that are not immediately executed
+* Fix build to work again for pre-FF35 browsers
+
 Changes to 1.7.0
 * Support customizable accesskey (to arrive in FF 35)
 

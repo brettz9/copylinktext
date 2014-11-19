@@ -5,14 +5,14 @@
             "type": "bool",
             "description": "Allow access by right-click to password fields",
             "value": false,
-            "title": "'Access passwords"
+            "title": "Access passwords"
         },
         {
             "name": "accessFormControls",
             "type": "bool",
             "description": "Allow access by right-click to form controls text context (e.g., buttons, select menus, etc.)",
             "value": false,
-            "title": "'Access form controls"
+            "title": "Access form controls"
         },
         {
             "name": "showAltText",

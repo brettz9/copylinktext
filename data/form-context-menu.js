@@ -25,6 +25,7 @@ self.on('context', function (el) {
 */
 
 self.on('click', function (el, data) {
+    data = JSON.parse(data);
     strings = data.localeObject;
     if (!data.immediateFormClickExecution) {
         self.postMessage(mouseDown(el));

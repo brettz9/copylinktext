@@ -6,7 +6,6 @@ var strings = self.options.localeObject;
         if (e.button !== 2) {
             return;
         }
-        console.log(mouseDown(e.target)[0]);
         self.port.emit('mouseDown', mouseDown(e.target)[0]);
         e.preventDefault();
     }, true);
