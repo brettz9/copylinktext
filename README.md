@@ -3,7 +3,7 @@
 Repo for new restartless version of https://addons.mozilla.org/en-US/firefox/addon/copy-link-text-4750/ .
 
 # To-dos
-1. Investigate issue #6
+1. Investigate [issue #6](https://github.com/brettz9/copylinktext/issues/6)
 
 # Possible user-facing to-dos
 1. Could try to make work with main browser XUL
