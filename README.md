@@ -2,7 +2,10 @@
 
 Repo for new restartless version of https://addons.mozilla.org/en-US/firefox/addon/copy-link-text-4750/ .
 
-# Possible user-facing todos
+# To-dos
+1. Investigate issue #6
+
+# Possible user-facing to-dos
 1. Could try to make work with main browser XUL
 2. Optional ability to get input type hidden, optgroup text?, get form and form control names?
 3. Move non-links/img alt text retrieval to separate add-on?
