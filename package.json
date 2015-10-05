@@ -36,10 +36,11 @@
             "title": "Access key for copying link text"
         }
     ],
+    "permissions": {"private-browsing": true},
     "name": "copylinktext",
     "license": "MPL 2.0/MIT/New BSD",
     "author": "Brett Zamir",
-    "version": "1.7.2",
+    "version": "1.8.0",
     "main": "lib/main",
     "title": "Copy Link Text",
     "id": "copylinktext@brett.zamir",

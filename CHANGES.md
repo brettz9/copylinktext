@@ -1,3 +1,6 @@
+# 1.8.0
+- Add support for private window browsing
+
 # 1.7.2
 - jpm build
 
