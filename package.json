@@ -40,6 +40,7 @@
     "name": "copylinktext",
     "license": "MPL 2.0/MIT/New BSD",
     "author": "Brett Zamir",
+    "contributors": [],
     "version": "1.8.0",
     "main": "lib/main",
     "title": "Copy Link Text",
@@ -47,5 +48,10 @@
     "engines": {
         "firefox": "30.0 - 35.0"
     },
+    "dependencies": {},
+    "keywords": ["links", "clipboard"],
+    "repository": "https://github.com/brettz9/copylinktext/",
+    "homepage": "https://github.com/brettz9/copylinktext/",
+    "bugs": "https://github.com/brettz9/copylinktext/issues/",
     "description": "Adds an option to the context menu so that when right-clicking a link, its text can be immediately copied--without the trouble of using the mouse to highlight the text exactly or the annoyance of unintentionally visiting the page of the link.\n\nOne may also right-click images to get alt text and drop-down menu items, buttons, and other form controls to get their text or values, including password fields if that option is enabled.\n\nNo more need to view source code in order to copy text from common visible form controls!"
 }
