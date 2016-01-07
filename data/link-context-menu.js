@@ -4,6 +4,7 @@
 'use strict';
 
 var strings,
+    lastElInfo = {},
     _ = // require('l10n').get
         function (str) {
             return strings[str];
@@ -15,6 +16,9 @@ self.on('click', function (el, data) {
     data = JSON.parse(data);
     strings = data.localeObject;
     showAltText = data.showAltText;
+    var highlightingEnabled = data.highlightingEnabled;
+    var highlightColor = data.highlightColor;
+    var highlightBackgroundColor = data.highlightBackgroundColor;
 
     if (showAltText) {
         imgs = el.getElementsByTagName('img');
@@ -29,6 +33,20 @@ self.on('click', function (el, data) {
     }
 
     self.postMessage([copytext, alts.length && alts[0] !== copytext ? alts : null]);
+
+    // Outside of highlightingEnabled block in case just disabled (this won't work now, though, as we are
+    //  rebuilding the menu each time and this script is rebuilt, losing the lastElInfo)
+    if (lastElInfo.el) {
+        lastElInfo.el.style.color = lastElInfo.color;
+        lastElInfo.el.style.backgroundColor = lastElInfo.backgroundColor;
+    }
+    lastElInfo.color = el.style.color;
+    lastElInfo.backgroundColor = el.style.backgroundColor;
+    lastElInfo.el = el;
+    if (highlightingEnabled) {
+        el.style.color = highlightColor;
+        el.style.backgroundColor = highlightBackgroundColor;
+    }
 });
 
 }());

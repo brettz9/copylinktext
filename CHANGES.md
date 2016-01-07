@@ -1,3 +1,8 @@
+# 1.9.0
+
+-   Bug fix: Respect "showAltText" setting
+-   Feature: Option to highlight last copied link
+
 # 1.8.0
 
 -   Add support for private window browsing

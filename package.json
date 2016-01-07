@@ -34,6 +34,27 @@
             "description": "A single letter (within the phrase \"Copy Link Text\") to be used as an accesskey for fast keyboard access after opening the context menu. Leave blank for the default.",
             "value": "",
             "title": "Access key for copying link text"
+        },
+        {
+            "name": "highlightingEnabled",
+            "type": "bool",
+            "description": "When right-clicking links, highlight the last selected link.",
+            "value": false,
+            "title": "Highlighting enabled"
+        },
+        {
+            "name": "highlightColor",
+            "type": "string",
+            "description": "Color for highlighted text",
+            "value": "black",
+            "title": "Highlight text color"
+        },
+        {
+            "name": "highlightBackgroundColor",
+            "type": "string",
+            "description": "Background color for highlighted text",
+            "value": "yellow",
+            "title": "Highlight background color"
         }
     ],
     "permissions": {"private-browsing": true},
@@ -41,7 +62,7 @@
     "license": "MPL 2.0/MIT/New BSD",
     "author": "Brett Zamir",
     "contributors": [],
-    "version": "1.8.0",
+    "version": "1.9.0",
     "main": "lib/main",
     "title": "Copy Link Text",
     "id": "copylinktext@brett.zamir",
