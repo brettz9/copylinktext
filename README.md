@@ -1,6 +1,6 @@
 # CopyLinkText
 
-Repo for restartless [Copy Link Text Firefox add-on](https://addons.mozilla.org/en-US/firefox/addon/copy-link-text-4750/).
+Repo for restartless [Copy Link Text Firefox add-on](https://addons.mozilla.org/firefox/addon/copy-link-text-4750/).
 
 ## Possible user-facing to-dos
 
