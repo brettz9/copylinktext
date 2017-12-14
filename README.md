@@ -1,5 +1,7 @@
 # CopyLinkText
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/brettz9/copylinktext.svg)](https://greenkeeper.io/)
+
 Repo for restartless [Copy Link Text Firefox add-on](https://addons.mozilla.org/firefox/addon/copy-link-text-4750/).
 
 ## Possible user-facing to-dos
