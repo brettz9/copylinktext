@@ -16,4 +16,4 @@ Repo for Copy Link Text WebExtensions add-on
 
 ## Other to-dos
 
-1.  Other possible coding to-dos listed in comments at top of <https://github.com/brettz9/copylinktext/blob/master/lib/main.js>
+1.  Other possible coding to-dos listed in comments at top of <https://github.com/brettz9/copylinktext/blob/master/lib/background.js>
