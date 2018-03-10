@@ -1,8 +1,0 @@
-*.lnk
-*.bat
-*.xpi
-
-.git
-.gitignore
-.jpmignore
-.mdastrc

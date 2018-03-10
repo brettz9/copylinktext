@@ -1,9 +1,8 @@
-/*globals self, mouseDown */
-var strings;
+/* globals self, mouseDown */
+var strings; // eslint-disable-line no-var, no-unused-vars
 
 (function () {
 'use strict';
-
 
 // PAGE EVENTS
 /*
@@ -31,5 +30,4 @@ self.on('click', function (el, data) {
         self.postMessage(mouseDown(el));
     }
 });
-
 }());

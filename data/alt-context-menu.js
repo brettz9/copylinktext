@@ -1,5 +1,5 @@
-/*globals self */
-(function () {
+/* globals self */
+(() => {
 'use strict';
 
 self.on('context', function (el) {
@@ -9,5 +9,4 @@ self.on('context', function (el) {
 self.on('click', function (el) {
     self.postMessage(el.alt);
 });
-
-}());
+})();

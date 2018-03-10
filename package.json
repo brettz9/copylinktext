@@ -57,20 +57,35 @@
             "title": "Highlight background color"
         }
     ],
-    "permissions": {"private-browsing": true},
+    "permissions": {
+        "private-browsing": true
+    },
     "name": "copylinktext",
-    "license": "MPL 2.0/MIT/New BSD",
+    "license": "(MPL-2.0 AND MIT AND BSD-3-Clause)",
     "author": "Brett Zamir",
     "contributors": [],
-    "version": "1.9.0",
-    "main": "lib/main",
+    "version": "2.0.0",
     "title": "Copy Link Text",
     "id": "copylinktext@brett.zamir",
-    "engines": {
-        "firefox": "30.0 - 35.0"
+    "engines": {},
+    "scripts": {
+        "eslint": "eslint .",
+        "copy-polyfill": "node ./copy-polyfill"
     },
     "dependencies": {},
-    "keywords": ["links", "clipboard"],
+    "devDependencies": {
+        "eslint": "4.18.2",
+        "eslint-config-standard": "11.0.0",
+        "eslint-plugin-import": "2.9.0",
+        "eslint-plugin-node": "6.0.1",
+        "eslint-plugin-promise": "3.6.0",
+        "eslint-plugin-standard": "3.0.1",
+        "webextension-polyfill": "^0.2.1"
+    },
+    "keywords": [
+        "links",
+        "clipboard"
+    ],
     "repository": "https://github.com/brettz9/copylinktext/",
     "homepage": "https://github.com/brettz9/copylinktext/",
     "bugs": "https://github.com/brettz9/copylinktext/issues/",

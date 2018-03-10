@@ -1,33 +1,31 @@
-/*globals self */
+/* globals self */
 
 (function () {
 'use strict';
 
-var strings,
-    lastElInfo = {},
+let strings;
+const lastElInfo = {},
     _ = // require('l10n').get
         function (str) {
             return strings[str];
         };
 
 self.on('click', function (el, data) {
-    var imgs, imgsl, i, showAltText, alts = [],
+    const alts = [],
         copytext = el.textContent.replace(/^\s*(.*?)\s*$/, '$1'); // Ensure we get it all (except WS)
     data = JSON.parse(data);
     strings = data.localeObject;
-    showAltText = data.showAltText;
-    var highlightingEnabled = data.highlightingEnabled;
-    var highlightColor = data.highlightColor;
-    var highlightBackgroundColor = data.highlightBackgroundColor;
+    const {
+        showAltText, highlightingEnabled, highlightColor, highlightBackgroundColor
+    } = data;
 
     if (showAltText) {
-        imgs = el.getElementsByTagName('img');
-        for (i = 0, imgsl = imgs.length; i < imgsl; i++) {
+        const imgs = el.getElementsByTagName('img');
+        for (let i = 0, imgsl = imgs.length; i < imgsl; i++) {
             if (imgs[i].hasAttribute('alt')) {
-                alts.push(imgs[i].alt || _("emptyString"));
-            }
-            else {
-                alts.push(_("notPresent"));
+                alts.push(imgs[i].alt || _('emptyString'));
+            } else {
+                alts.push(_('notPresent'));
             }
         }
     }
@@ -48,5 +46,4 @@ self.on('click', function (el, data) {
         el.style.backgroundColor = highlightBackgroundColor;
     }
 });
-
 }());
