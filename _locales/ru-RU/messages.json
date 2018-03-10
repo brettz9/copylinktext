@@ -1,23 +1,65 @@
-extensions.copylinktext.description=Щёлкните правой кнопкой по ссылке, чтобы скопировать её текст
-copySelectPromptTitle=Копировать содержимое пунктов меню выбора
-copySelectPromptInstructions=Выберите пункт из меню выбора, который вы желаете скопировать
-textFormat=Только текст (%1s)
-valueFormat=Только значение (%1s)
-textAndValue=Текст и значение помещаются в круглые скобки (если они отличаются)
-textAndValueFormat=%1s (%2s)
-addAltToLinkText=%1s; вар.: %2s
-altJoin=,\u0020
-emptyString=(пусто)
-notPresent=(не существует)
-labelFormat=Текст метки формы (%1s)
-joinOpts=;\u0020
-joinOptsText=;\u0020
+{
+    "extensions.copylinktext.description": {
+        "message": "Щёлкните правой кнопкой по ссылке, чтобы скопировать её текст"
+    },
+    "copySelectPromptTitle": {
+        "message": "Копировать содержимое пунктов меню выбора"
+    },
+    "copySelectPromptInstructions": {
+        "message": "Выберите пункт из меню выбора, который вы желаете скопировать"
+    },
+    "textFormat": {
+        "message": "Только текст (%1s)"
+    },
+    "valueFormat": {
+        "message": "Только значение (%1s)"
+    },
+    "textAndValue": {
+        "message": "Текст и значение помещаются в круглые скобки (если они отличаются)"
+    },
+    "textAndValueFormat": {
+        "message": "%1s (%2s)"
+    },
+    "addAltToLinkText": {
+        "message": "%1s; вар.: %2s"
+    },
+    "altJoin": {
+        "message": ",\u0020"
+    },
+    "emptyString": {
+        "message": "(пусто)"
+    },
+    "notPresent": {
+        "message": "(не существует)"
+    },
+    "labelFormat": {
+        "message": "Текст метки формы (%1s)"
+    },
+    "joinOpts": {
+        "message": ";\u0020"
+    },
+    "joinOptsText": {
+        "message": ";\u0020"
+    },
 
-copylinktextContext.label=Копировать текст ссылки
-copylinktextContext.accesskey=л
+    "copylinktextContext.label": {
+        "message": "Копировать текст ссылки"
+    },
+    "copylinktextContext.accesskey": {
+        "message": "л"
+    },
 
-accessFormControls_description=Разрешить доступ по правому щелчку к формам управления текстовым содержимым (кнопки, меню выбора и т. п.)
-accessPass_description=Разрешить доступ по правому щелчку к полям паролей
+    "accessFormControls_description": {
+        "message": "Разрешить доступ по правому щелчку к формам управления текстовым содержимым (кнопки, меню выбора и т. п.)"
+    },
+    "accessPass_description": {
+        "message": "Разрешить доступ по правому щелчку к полям паролей"
+    },
 
-accessFormControls_title=Разрешить доступ по правому щелчку к формам управления текстовым содержимым (кнопки, меню выбора и т. п.)
-accessPass_title=Разрешить доступ по правому щелчку к полям паролей
+    "accessFormControls_title": {
+        "message": "Разрешить доступ по правому щелчку к формам управления текстовым содержимым (кнопки, меню выбора и т. п.)"
+    },
+    "accessPass_title": {
+        "message": "Разрешить доступ по правому щелчку к полям паролей"
+    }
+}

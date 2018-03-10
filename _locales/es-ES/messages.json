@@ -1,23 +1,65 @@
-extensions.copylinktext.description=Botón derecho para copiar texto del enlace
-copySelectPromptTitle=Contenido de Menus de opciones de copiar
-copySelectPromptInstructions=Selecciona el contenido que deseas copiar desde el menú
-textFormat=Sólo texto (%1s)
-valueFormat=Sólo valor (%1s)
-textAndValue=Texto y valor colocado en parentesis (si es diferente)
-textAndValueFormat=%1s (%2s)
-addAltToLinkText=%1s; alts: %2s
-altJoin=,\u0020
-emptyString=(vacío)
-notPresent=(no presente)
-labelFormat=Forma del texto de la etiqueta (%1s)
-joinOpts=;\u0020
-joinOptsText=;\u0020
+{
+    "extensions.copylinktext.description": {
+        "message": "Botón derecho para copiar texto del enlace"
+    },
+    "copySelectPromptTitle": {
+        "message": "Contenido de Menus de opciones de copiar"
+    },
+    "copySelectPromptInstructions": {
+        "message": "Selecciona el contenido que deseas copiar desde el menú"
+    },
+    "textFormat": {
+        "message": "Sólo texto (%1s)"
+    },
+    "valueFormat": {
+        "message": "Sólo valor (%1s)"
+    },
+    "textAndValue": {
+        "message": "Texto y valor colocado en parentesis (si es diferente)"
+    },
+    "textAndValueFormat": {
+        "message": "%1s (%2s)"
+    },
+    "addAltToLinkText": {
+        "message": "%1s; alts: %2s"
+    },
+    "altJoin": {
+        "message": ",\u0020"
+    },
+    "emptyString": {
+        "message": "(vacío)"
+    },
+    "notPresent": {
+        "message": "(no presente)"
+    },
+    "labelFormat": {
+        "message": "Forma del texto de la etiqueta (%1s)"
+    },
+    "joinOpts": {
+        "message": ";\u0020"
+    },
+    "joinOptsText": {
+        "message": ";\u0020"
+    },
 
-copylinktextContext.label=Copiar Texto del Enlace
-copylinktextContext.accesskey=t
+    "copylinktextContext.label": {
+        "message": "Copiar Texto del Enlace"
+    },
+    "copylinktextContext.accesskey": {
+        "message": "t"
+    },
 
-accessFormControls_description=Permitir al menú auto-aparecer cuando se hace botón derecho en algún form (ejemplo: botones, selects, etc)
-accessPass_description=Permitir al menú auto-aparecer cuando se hace botón derecho en algún input de texto.
+    "accessFormControls_description": {
+        "message": "Permitir al menú auto-aparecer cuando se hace botón derecho en algún form (ejemplo: botones, selects, etc)"
+    },
+    "accessPass_description": {
+        "message": "Permitir al menú auto-aparecer cuando se hace botón derecho en algún input de texto."
+    },
 
-accessFormControls_title=Permitir al menú auto-aparecer cuando se hace botón derecho en algún form (ejemplo: botones, selects, etc)
-accessPass_title=Permitir al menú auto-aparecer cuando se hace botón derecho en algún input de texto.
+    "accessFormControls_title": {
+        "message": "Permitir al menú auto-aparecer cuando se hace botón derecho en algún form (ejemplo: botones, selects, etc)"
+    },
+    "accessPass_title": {
+        "message": "Permitir al menú auto-aparecer cuando se hace botón derecho en algún input de texto."
+    }
+}

@@ -1,23 +1,65 @@
-extensions.copylinktext.description=右键单击一条链接以复制其文本
-copySelectPromptTitle=复制选中菜单的选项内容
-copySelectPromptInstructions=选择你希望从选中菜单中复制的内容
-textFormat=仅文本 (%1s)
-valueFormat=仅值(Value) (%1s)
-textAndValue=将文本和值放在括号内（如果不同的话）
-textAndValueFormat=%1s (%2s)
-addAltToLinkText=%1s; alts: %2s
-altJoin=,\u0020
-emptyString=(空白)
-notPresent=(没有显示)
-labelFormat=表格标签文本 (%1s)
-joinOpts=;\u0020
-joinOptsText=;\u0020
+{
+    "extensions.copylinktext.description": {
+        "message": "右键单击一条链接以复制其文本"
+    },
+    "copySelectPromptTitle": {
+        "message": "复制选中菜单的选项内容"
+    },
+    "copySelectPromptInstructions": {
+        "message": "选择你希望从选中菜单中复制的内容"
+    },
+    "textFormat": {
+        "message": "仅文本 (%1s)"
+    },
+    "valueFormat": {
+        "message": "仅值(Value) (%1s)"
+    },
+    "textAndValue": {
+        "message": "将文本和值放在括号内（如果不同的话）"
+    },
+    "textAndValueFormat": {
+        "message": "%1s (%2s)"
+    },
+    "addAltToLinkText": {
+        "message": "%1s; alts: %2s"
+    },
+    "altJoin": {
+        "message": ",\u0020"
+    },
+    "emptyString": {
+        "message": "(空白)"
+    },
+    "notPresent": {
+        "message": "(没有显示)"
+    },
+    "labelFormat": {
+        "message": "表格标签文本 (%1s)"
+    },
+    "joinOpts": {
+        "message": ";\u0020"
+    },
+    "joinOptsText": {
+        "message": ";\u0020"
+    },
 
-copylinktextContext.label=Copy Link Text
-copylinktextContext.accesskey=t
+    "copylinktextContext.label": {
+        "message": "Copy Link Text"
+    },
+    "copylinktextContext.accesskey": {
+        "message": "t"
+    },
 
-accessFormControls_description=允许通过右键单击以控制文本环境(例如，按钮、选择菜单)
-accessPass_description=允许通过右键单击访问密码区域
+    "accessFormControls_description": {
+        "message": "允许通过右键单击以控制文本环境(例如，按钮、选择菜单)"
+    },
+    "accessPass_description": {
+        "message": "允许通过右键单击访问密码区域"
+    },
 
-accessFormControls_title=允许通过右键单击以控制文本环境(例如，按钮、选择菜单)
-accessPass_title=允许通过右键单击访问密码区域
+    "accessFormControls_title": {
+        "message": "允许通过右键单击以控制文本环境(例如，按钮、选择菜单)"
+    },
+    "accessPass_title": {
+        "message": "允许通过右键单击访问密码区域"
+    }
+}

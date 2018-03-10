@@ -1,23 +1,65 @@
-extensions.copylinktext.description=Clique o link com o botão direito para copiar seu texto
-copySelectPromptTitle=Copiar o conteúdo selecionado do menu de opções
-copySelectPromptInstructions=Escolha o conteúdo que você deseja copiar do menu selecionado
-textFormat=Apenas Texto (%1s)
-valueFormat=Apenas valor (%1s)
-textAndValue=Texto e valor em parênteses (se diferente)
-textAndValueFormat=%1s (%2s)
-addAltToLinkText=%1s; alts: %2s
-altJoin=,\u0020
-emptyString=(vazio)
-notPresent=(não presente)
-labelFormat=Texto do rótulo do formulário (%1s)
-joinOpts=;\u0020
-joinOptsText=;\u0020
+{
+    "extensions.copylinktext.description": {
+        "message": "Clique o link com o botão direito para copiar seu texto"
+    },
+    "copySelectPromptTitle": {
+        "message": "Copiar o conteúdo selecionado do menu de opções"
+    },
+    "copySelectPromptInstructions": {
+        "message": "Escolha o conteúdo que você deseja copiar do menu selecionado"
+    },
+    "textFormat": {
+        "message": "Apenas Texto (%1s)"
+    },
+    "valueFormat": {
+        "message": "Apenas valor (%1s)"
+    },
+    "textAndValue": {
+        "message": "Texto e valor em parênteses (se diferente)"
+    },
+    "textAndValueFormat": {
+        "message": "%1s (%2s)"
+    },
+    "addAltToLinkText": {
+        "message": "%1s; alts: %2s"
+    },
+    "altJoin": {
+        "message": ",\u0020"
+    },
+    "emptyString": {
+        "message": "(vazio)"
+    },
+    "notPresent": {
+        "message": "(não presente)"
+    },
+    "labelFormat": {
+        "message": "Texto do rótulo do formulário (%1s)"
+    },
+    "joinOpts": {
+        "message": ";\u0020"
+    },
+    "joinOptsText": {
+        "message": ";\u0020"
+    },
 
-copylinktextContext.label=Copy Link Text
-copylinktextContext.accesskey=t
+    "copylinktextContext.label": {
+        "message": "Copy Link Text"
+    },
+    "copylinktextContext.accesskey": {
+        "message": "t"
+    },
 
-accessFormControls_description=Permite acesso ao contexto dos controles do formulário (por exemplo, botões, menus de seleção etc.) por meio do botão direito do mouse
-accessPass_description=Permite acesso aos campos de senha por meio do botão direito do mouse
+    "accessFormControls_description": {
+        "message": "Permite acesso ao contexto dos controles do formulário (por exemplo, botões, menus de seleção etc.) por meio do botão direito do mouse"
+    },
+    "accessPass_description": {
+        "message": "Permite acesso aos campos de senha por meio do botão direito do mouse"
+    },
 
-accessFormControls_title=Permite acesso ao contexto dos controles do formulário (por exemplo, botões, menus de seleção etc.) por meio do botão direito do mouse
-accessPass_title=Permite acesso aos campos de senha por meio do botão direito do mouse
+    "accessFormControls_title": {
+        "message": "Permite acesso ao contexto dos controles do formulário (por exemplo, botões, menus de seleção etc.) por meio do botão direito do mouse"
+    },
+    "accessPass_title": {
+        "message": "Permite acesso aos campos de senha por meio do botão direito do mouse"
+    }
+}

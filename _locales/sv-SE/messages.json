@@ -1,23 +1,65 @@
-extensions.copylinktext.description=Högerklicka på en länk för att kopiera dess text
-copySelectPromptTitle=Kopiera urvalsmenyns alternativinnehåll
-copySelectPromptInstructions=Välj det innehåll som du önskar kopiera i urvalsmenyn
-textFormat=Endast text (%1s)
-valueFormat=Endast värde (%1s)
-textAndValue=Text och värde inom parentes (om olika)
-textAndValueFormat=%1s (%2s)
-addAltToLinkText=%1s; alt.: %2s
-altJoin=,\u0020
-emptyString=(tom)
-notPresent=(inte tillgänglig)
-labelFormat=Formuläretikettext (%1s)
-joinOpts=;\u0020
-joinOptsText=;\u0020
+{
+    "extensions.copylinktext.description": {
+        "message": "Högerklicka på en länk för att kopiera dess text"
+    },
+    "copySelectPromptTitle": {
+        "message": "Kopiera urvalsmenyns alternativinnehåll"
+    },
+    "copySelectPromptInstructions": {
+        "message": "Välj det innehåll som du önskar kopiera i urvalsmenyn"
+    },
+    "textFormat": {
+        "message": "Endast text (%1s)"
+    },
+    "valueFormat": {
+        "message": "Endast värde (%1s)"
+    },
+    "textAndValue": {
+        "message": "Text och värde inom parentes (om olika)"
+    },
+    "textAndValueFormat": {
+        "message": "%1s (%2s)"
+    },
+    "addAltToLinkText": {
+        "message": "%1s; alt.: %2s"
+    },
+    "altJoin": {
+        "message": ",\u0020"
+    },
+    "emptyString": {
+        "message": "(tom)"
+    },
+    "notPresent": {
+        "message": "(inte tillgänglig)"
+    },
+    "labelFormat": {
+        "message": "Formuläretikettext (%1s)"
+    },
+    "joinOpts": {
+        "message": ";\u0020"
+    },
+    "joinOptsText": {
+        "message": ";\u0020"
+    },
 
-copylinktextContext.label=Kopiera länktext
-copylinktextContext.accesskey=t
+    "copylinktextContext.label": {
+        "message": "Kopiera länktext"
+    },
+    "copylinktextContext.accesskey": {
+        "message": "t"
+    },
 
-accessFormControls_description=Tillåt åtkomst via högerklick i formulärkontrollers textkontext (t.ex. knappar, urvalsmenyer o.s.v.)
-accessPass_description=Tillåt åtkomst via högerklick i lösenordsfält
+    "accessFormControls_description": {
+        "message": "Tillåt åtkomst via högerklick i formulärkontrollers textkontext (t.ex. knappar, urvalsmenyer o.s.v.)"
+    },
+    "accessPass_description": {
+        "message": "Tillåt åtkomst via högerklick i lösenordsfält"
+    },
 
-accessFormControls_title=Tillåt åtkomst via högerklick i formulärkontrollers textkontext (t.ex. knappar, urvalsmenyer o.s.v.)
-accessPass_title=Tillåt åtkomst via högerklick i lösenordsfält
+    "accessFormControls_title": {
+        "message": "Tillåt åtkomst via högerklick i formulärkontrollers textkontext (t.ex. knappar, urvalsmenyer o.s.v.)"
+    },
+    "accessPass_title": {
+        "message": "Tillåt åtkomst via högerklick i lösenordsfält"
+    }
+}

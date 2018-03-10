@@ -1,23 +1,65 @@
-extensions.copylinktext.description=以右鍵按連結以複製其文字
-copySelectPromptTitle=複製選取選單的選項內容
-copySelectPromptInstructions=選取您想從選取選單複製的內容
-textFormat=僅文字 (%1s)
-valueFormat=僅值 (%1s)
-textAndValue=文字並將值放在括號內 (若兩者不同)
-textAndValueFormat=%1s (%2s)
-addAltToLinkText=%1s; alts: %2s
-altJoin=，\u0020
-emptyString=(空白)
-notPresent=(沒有顯示)
-labelFormat=表格標籤文字 (%1s)
-joinOpts=;\u0020
-joinOptsText=;\u0020
+{
+    "extensions.copylinktext.description": {
+        "message": "以右鍵按連結以複製其文字"
+    },
+    "copySelectPromptTitle": {
+        "message": "複製選取選單的選項內容"
+    },
+    "copySelectPromptInstructions": {
+        "message": "選取您想從選取選單複製的內容"
+    },
+    "textFormat": {
+        "message": "僅文字 (%1s)"
+    },
+    "valueFormat": {
+        "message": "僅值 (%1s)"
+    },
+    "textAndValue": {
+        "message": "文字並將值放在括號內 (若兩者不同)"
+    },
+    "textAndValueFormat": {
+        "message": "%1s (%2s)"
+    },
+    "addAltToLinkText": {
+        "message": "%1s; alts: %2s"
+    },
+    "altJoin": {
+        "message": "，\u0020"
+    },
+    "emptyString": {
+        "message": "(空白)"
+    },
+    "notPresent": {
+        "message": "(沒有顯示)"
+    },
+    "labelFormat": {
+        "message": "表格標籤文字 (%1s)"
+    },
+    "joinOpts": {
+        "message": ";\u0020"
+    },
+    "joinOptsText": {
+        "message": ";\u0020"
+    },
 
-copylinktextContext.label=Copy Link Text
-copylinktextContext.accesskey=t
+    "copylinktextContext.label": {
+        "message": "Copy Link Text"
+    },
+    "copylinktextContext.accesskey": {
+        "message": "t"
+    },
 
-accessFormControls_description=允許按右鍵存取表格控制文字內文 (如按鈕、選取選單等)
-accessPass_description=允許按右鍵存取密碼欄
+    "accessFormControls_description": {
+        "message": "允許按右鍵存取表格控制文字內文 (如按鈕、選取選單等)"
+    },
+    "accessPass_description": {
+        "message": "允許按右鍵存取密碼欄"
+    },
 
-accessFormControls_title=允許按右鍵存取表格控制文字內文 (如按鈕、選取選單等)
-accessPass_title=允許按右鍵存取密碼欄
+    "accessFormControls_title": {
+        "message": "允許按右鍵存取表格控制文字內文 (如按鈕、選取選單等)"
+    },
+    "accessPass_title": {
+        "message": "允許按右鍵存取密碼欄"
+    }
+}

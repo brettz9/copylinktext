@@ -1,23 +1,65 @@
-extensions.copylinktext.description=Кликните на везу десним кликом да бисте копирали њен текст
-copySelectPromptTitle=Копирај садржај одабраног дугмета
-copySelectPromptInstructions=Изаберите садржаје које желите да копирате из изабраног менија
-textFormat=само текст (%1s)
-valueFormat=само вредности (%1s)
-textAndValue=текст и вредности постављене у заграде (ако су другачије)
-textAndValueFormat=%1s (%2s)
-addAltToLinkText=%1s; alts: %2s
-altJoin=,\u0020
-emptyString=(празно)
-notPresent=(нема)
-labelFormat=Текст натписа на обрасцу (%1s)
-joinOpts=;\u0020
-joinOptsText=;\u0020
+{
+    "extensions.copylinktext.description": {
+        "message": "Кликните на везу десним кликом да бисте копирали њен текст"
+    },
+    "copySelectPromptTitle": {
+        "message": "Копирај садржај одабраног дугмета"
+    },
+    "copySelectPromptInstructions": {
+        "message": "Изаберите садржаје које желите да копирате из изабраног менија"
+    },
+    "textFormat": {
+        "message": "само текст (%1s)"
+    },
+    "valueFormat": {
+        "message": "само вредности (%1s)"
+    },
+    "textAndValue": {
+        "message": "текст и вредности постављене у заграде (ако су другачије)"
+    },
+    "textAndValueFormat": {
+        "message": "%1s (%2s)"
+    },
+    "addAltToLinkText": {
+        "message": "%1s; alts: %2s"
+    },
+    "altJoin": {
+        "message": ",\u0020"
+    },
+    "emptyString": {
+        "message": "(празно)"
+    },
+    "notPresent": {
+        "message": "(нема)"
+    },
+    "labelFormat": {
+        "message": "Текст натписа на обрасцу (%1s)"
+    },
+    "joinOpts": {
+        "message": ";\u0020"
+    },
+    "joinOptsText": {
+        "message": ";\u0020"
+    },
 
-copylinktextContext.label=Копирај текст везе
-copylinktextContext.accesskey=т
+    "copylinktextContext.label": {
+        "message": "Копирај текст везе"
+    },
+    "copylinktextContext.accesskey": {
+        "message": "т"
+    },
 
-accessFormControls_description=Омогућава приступ тексту делова образаца (нпр. дугмадима, менијима итд.) помоћу десног клика.
-accessPass_description=Дозволи преступ пољима за лозинке помоћу десног клика
+    "accessFormControls_description": {
+        "message": "Омогућава приступ тексту делова образаца (нпр. дугмадима, менијима итд.) помоћу десног клика."
+    },
+    "accessPass_description": {
+        "message": "Дозволи преступ пољима за лозинке помоћу десног клика"
+    },
 
-accessFormControls_title=Омогућава приступ тексту делова образаца (нпр. дугмадима, менијима итд.) помоћу десног клика.
-accessPass_title=Дозволи преступ пољима за лозинке помоћу десног клика
+    "accessFormControls_title": {
+        "message": "Омогућава приступ тексту делова образаца (нпр. дугмадима, менијима итд.) помоћу десног клика."
+    },
+    "accessPass_title": {
+        "message": "Дозволи преступ пољима за лозинке помоћу десног клика"
+    }
+}

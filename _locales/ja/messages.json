@@ -1,23 +1,65 @@
-extensions.copylinktext.description=テキストをコピーするためにリンクを右クリックする
-copySelectPromptTitle=メニューのオプション内容を選択してコピーする
-copySelectPromptInstructions=メニューからコピーしたいコンテンツを選択
-textFormat=テキストのみ(%1s)
-valueFormat=値のみ(%1s)
-textAndValue=テキストと値の括弧内の配置（異なる場合）
-textAndValueFormat=%1s (%2s)
-addAltToLinkText=%1s; alts: %2s
-altJoin=,\u0020
-emptyString=(空白)
-notPresent=(存在しない)
-labelFormat=フォームのラベルテキスト(%1s)
-joinOpts=;\u0020
-joinOptsText=;\u0020
+{
+    "extensions.copylinktext.description": {
+        "message": "テキストをコピーするためにリンクを右クリックする"
+    },
+    "copySelectPromptTitle": {
+        "message": "メニューのオプション内容を選択してコピーする"
+    },
+    "copySelectPromptInstructions": {
+        "message": "メニューからコピーしたいコンテンツを選択"
+    },
+    "textFormat": {
+        "message": "テキストのみ(%1s)"
+    },
+    "valueFormat": {
+        "message": "値のみ(%1s)"
+    },
+    "textAndValue": {
+        "message": "テキストと値の括弧内の配置（異なる場合）"
+    },
+    "textAndValueFormat": {
+        "message": "%1s (%2s)"
+    },
+    "addAltToLinkText": {
+        "message": "%1s; alts: %2s"
+    },
+    "altJoin": {
+        "message": ",\u0020"
+    },
+    "emptyString": {
+        "message": "(空白)"
+    },
+    "notPresent": {
+        "message": "(存在しない)"
+    },
+    "labelFormat": {
+        "message": "フォームのラベルテキスト(%1s)"
+    },
+    "joinOpts": {
+        "message": ";\u0020"
+    },
+    "joinOptsText": {
+        "message": ";\u0020"
+    },
 
-copylinktextContext.label=リンクのテキストをコピー
-copylinktextContext.accesskey=t
+    "copylinktextContext.label": {
+        "message": "リンクのテキストをコピー"
+    },
+    "copylinktextContext.accesskey": {
+        "message": "t"
+    },
 
-accessFormControls_description=右クリックによるテキストの書式コントロールアクセスを許可する（例えばボタン、メニュー選択など）
-accessPass_description=右クリックによるパスワードフィールドへのアクセスを許可する
+    "accessFormControls_description": {
+        "message": "右クリックによるテキストの書式コントロールアクセスを許可する（例えばボタン、メニュー選択など）"
+    },
+    "accessPass_description": {
+        "message": "右クリックによるパスワードフィールドへのアクセスを許可する"
+    },
 
-accessFormControls_title=右クリックによるテキストの書式コントロールアクセスを許可する（例えばボタン、メニュー選択など）
-accessPass_title=右クリックによるパスワードフィールドへのアクセスを許可する
+    "accessFormControls_title": {
+        "message": "右クリックによるテキストの書式コントロールアクセスを許可する（例えばボタン、メニュー選択など）"
+    },
+    "accessPass_title": {
+        "message": "右クリックによるパスワードフィールドへのアクセスを許可する"
+    }
+}
