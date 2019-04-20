@@ -12,10 +12,10 @@ port.postMessage();
 */
 
 self.on('context', function (el) {
-    return !!el.alt;
+  return Boolean(el.alt);
 });
 
 self.on('click', function (el) {
-    self.postMessage(el.alt);
+  self.postMessage(el.alt);
 });
 })();

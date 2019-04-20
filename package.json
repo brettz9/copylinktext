@@ -1,93 +1,39 @@
 {
-    "preferences": [
-        {
-            "name": "accessPass",
-            "type": "bool",
-            "description": "Allow access by right-click to password fields",
-            "value": false,
-            "title": "Access passwords"
-        },
-        {
-            "name": "accessFormControls",
-            "type": "bool",
-            "description": "Allow access by right-click to form controls text context (e.g., buttons, select menus, etc.)",
-            "value": false,
-            "title": "Access form controls"
-        },
-        {
-            "name": "showAltText",
-            "type": "bool",
-            "description": "Copy alt attribute content in addition to displayed link text",
-            "value": false,
-            "title": "Show alt attribute text"
-        },
-        {
-            "name": "immediateFormClickExecution",
-            "type": "bool",
-            "description": "When right-clicking buttons, select menus, non-text input boxes, or images, grab textual information pertaining to the form element",
-            "value": false,
-            "title": "Immediate execution of a form click"
-        },
-        {
-            "name": "copyLinkTextAccessKey",
-            "type": "string",
-            "description": "A single letter (within the phrase \"Copy Link Text\") to be used as an accesskey for fast keyboard access after opening the context menu. Leave blank for the default.",
-            "value": "",
-            "title": "Access key for copying link text"
-        },
-        {
-            "name": "highlightingEnabled",
-            "type": "bool",
-            "description": "When right-clicking links, highlight the last selected link.",
-            "value": false,
-            "title": "Highlighting enabled"
-        },
-        {
-            "name": "highlightColor",
-            "type": "string",
-            "description": "Color for highlighted text",
-            "value": "black",
-            "title": "Highlight text color"
-        },
-        {
-            "name": "highlightBackgroundColor",
-            "type": "string",
-            "description": "Background color for highlighted text",
-            "value": "yellow",
-            "title": "Highlight background color"
-        }
-    ],
-    "permissions": {
-        "private-browsing": true
-    },
-    "name": "copylinktext",
-    "license": "(MPL-2.0 AND MIT AND BSD-3-Clause)",
-    "author": "Brett Zamir",
-    "contributors": [],
-    "version": "2.0.0",
-    "title": "Copy Link Text",
-    "engines": {},
-    "scripts": {
-        "eslint": "eslint .",
-        "copy": "cp node_modules/webextension-polyfill/dist/browser-polyfill.js polyfills/browser-polyfill.js"
-    },
-    "dependencies": {},
-    "devDependencies": {
-        "eslint": "4.18.2",
-        "eslint-config-standard": "11.0.0",
-        "eslint-plugin-import": "2.9.0",
-        "eslint-plugin-node": "6.0.1",
-        "eslint-plugin-promise": "3.6.0",
-        "eslint-plugin-standard": "3.0.1",
-        "webextension-polyfill": "^0.2.1"
-    },
-    "keywords": [
-        "links",
-        "clipboard"
-    ],
-    "license": "MIT",
-    "repository": "https://github.com/brettz9/copylinktext/",
-    "homepage": "https://github.com/brettz9/copylinktext/",
-    "bugs": "https://github.com/brettz9/copylinktext/issues/",
-    "description": "Adds an option to the context menu so that when right-clicking a link, its text can be immediately copied--without the trouble of using the mouse to highlight the text exactly or the annoyance of unintentionally visiting the page of the link.\n\nOne may also right-click images to get alt text and drop-down menu items, buttons, and other form controls to get their text or values, including password fields if that option is enabled.\n\nNo more need to view source code in order to copy text from common visible form controls!"
+  "name": "copylinktext",
+  "license": "MIT",
+  "author": "Brett Zamir",
+  "contributors": [],
+  "version": "2.0.0",
+  "title": "Copy Link Text",
+  "engines": {},
+  "scripts": {
+    "eslint": "eslint .",
+    "copy": "cp node_modules/webextension-polyfill/dist/browser-polyfill.js polyfills/browser-polyfill.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@mysticatea/eslint-plugin": "^9.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-ash-nazg": "^2.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-compat": "^3.1.1",
+    "eslint-plugin-eslint-comments": "^3.1.1",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsdoc": "^4.8.3",
+    "eslint-plugin-markdown": "^1.0.0",
+    "eslint-plugin-no-use-extend-native": "^0.4.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-unicorn": "^8.0.2",
+    "webextension-polyfill": "^0.2.1"
+  },
+  "keywords": [
+    "links",
+    "clipboard"
+  ],
+  "repository": "https://github.com/brettz9/copylinktext/",
+  "homepage": "https://github.com/brettz9/copylinktext/",
+  "bugs": "https://github.com/brettz9/copylinktext/issues/",
+  "description": "Adds an option to the context menu so that when right-clicking a link, its text can be immediately copied--without the trouble of using the mouse to highlight the text exactly or the annoyance of unintentionally visiting the page of the link.\n\nOne may also right-click images to get alt text and drop-down menu items, buttons, and other form controls to get their text or values, including password fields if that option is enabled.\n\nNo more need to view source code in order to copy text from common visible form controls!"
 }
